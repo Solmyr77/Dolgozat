@@ -14,6 +14,8 @@ def test1():
 
     ActionChains(browser).double_click(elemOne).perform()
 
+    time.sleep(1)
+
     browser.save_screenshot("testOne.png")
 
     assert "animation" in elemOne.get_attribute("class")
